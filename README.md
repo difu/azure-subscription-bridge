@@ -35,7 +35,6 @@ azure-subscription-bridge/
 ├── kv-subscription-b/        # Key Vault + Secret + RBAC
 │   ├── main.tf
 │   └── variables.tf
-├── deploy.sh                 # Script to deploy both parts
 └── README.md                 # You are here
 ```
 
@@ -78,7 +77,8 @@ azure-subscription-bridge/
  - Fully managed and repeatable via Terraform.
 
 ## 🧪 Test It (From VM)
-    ```bash
-    az login --identity --allow-no-subscriptions
-    az keyvault secret show --vault-name <VaultName> --name example-secret
-    ```
+
+ ```bash
+ az login --identity --allow-no-subscriptions
+ az keyvault secret show --vault-name <VaultName> --name example-secret
+ ```
